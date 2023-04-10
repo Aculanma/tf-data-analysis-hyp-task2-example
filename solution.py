@@ -10,4 +10,4 @@ def solution(x: np.array, y: np.array) -> bool:
     # Не меняйте название функции и её аргументы
     alpha = 0.09
     p_val = stats.ks_2samp(x, y)[1]
-    return True if res <= alpha else False # Ваш ответ, True или False
+    return True if p_val <= alpha else False # Ваш ответ, True или False
